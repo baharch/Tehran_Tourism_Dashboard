@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="داشبورد تعاملی نتایج پایان‌نامه کارشناسی ارشد درباره الگوهای فضایی حضور دیجیتال گردشگران در بافت تاریخی تهران، منطقه ۱۲">
+  <title>داشبورد تعاملی نتایج پایان‌نامه | بهاره چنگیزی</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <style>
+    /* Landing page refresh — intentionally self-contained so only index.html needs replacement */
+    .topbar{height:auto;min-height:94px;padding-top:14px;padding-bottom:14px;gap:28px;border-bottom:0;box-shadow:0 8px 28px #102a4314}
+    .uni-brand,.dashboard-brand{display:flex;align-items:center;gap:14px;color:#fff;min-width:0}
+    .uni-brand{direction:rtl}.dashboard-brand{margin-right:auto;border-right:1px solid #c49a5070;padding-right:28px}
+    .uni-mark{width:54px;height:54px;flex:0 0 54px;color:var(--gold2)}
+    .uni-copy,.dashboard-copy{display:grid;gap:3px}.uni-copy b,.dashboard-copy b{font-size:1rem;line-height:1.55}.uni-copy small,.dashboard-copy small{color:#e7dcc6;font-size:.76rem;line-height:1.6}
+    .content{padding-top:28px}
+    .hero{display:block;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none;overflow:visible}
+    .hero:before{display:none}
+    .hero-intro{display:grid;grid-template-columns:minmax(0,1.28fr) minmax(300px,.72fr);gap:clamp(28px,5vw,70px);align-items:center;background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:clamp(26px,4vw,52px);box-shadow:0 18px 50px #102a430d;overflow:hidden;position:relative}
+    .hero-intro:after{content:"";position:absolute;right:0;top:0;width:7px;height:100%;background:var(--gold)}
+    .hero-copy{max-width:none;grid-column:1;grid-row:1;text-align:right}
+    .hero-visual{grid-column:2;grid-row:1;display:grid;place-items:center;min-width:0}
+    .hero-visual svg{width:min(100%,390px);height:auto;display:block}
+    .eyebrow{display:flex;align-items:center;gap:12px;direction:rtl;font-family:"Vazirmatn",Tahoma,sans-serif;letter-spacing:0;color:var(--gold);font-size:.83rem;font-weight:700;margin-bottom:15px}
+    .eyebrow:before{content:"";width:46px;height:2px;background:var(--gold);flex:0 0 46px}
+    .hero h1{font-size:clamp(1.95rem,4.2vw,3.55rem);line-height:1.45;margin:0;color:var(--navy);font-weight:800}
+    .hero h1 i{display:block;margin-top:4px;font-size:.56em;color:var(--gold);font-style:normal}
+    .people-row{display:flex;flex-wrap:wrap;gap:0;margin:27px 0 18px;border-top:1px solid #eadfcd;border-bottom:1px solid #eadfcd;padding:14px 0}
+    .person{display:grid;grid-template-columns:34px auto;column-gap:9px;align-items:center;padding:2px 18px;border-left:1px solid #dfd3bd;min-width:190px}
+    .person:last-child{border-left:0}.person-icon{grid-row:1/3;width:30px;height:30px;color:var(--gold)}.person span{font-size:.72rem;color:var(--muted)}.person b{font-size:.88rem;color:var(--navy)}
+    .hero-summary{font-size:.95rem!important;line-height:2!important;color:var(--muted)!important;margin:0!important;max-width:850px}
+    .hero .metrics,.hero .note{grid-column:auto}.hero .metrics{margin-top:22px}.hero .note{margin-bottom:0}
+    .method-grid{direction:rtl;grid-template-columns:repeat(3,1fr);margin-top:30px}
+    .method{min-height:185px;padding:22px 22px 20px}.method span{font-size:1.32rem}.method b{font-size:.9rem}.method em{margin-top:auto}
+    @media(max-width:900px){
+      .topbar{position:relative;flex-wrap:wrap;justify-content:flex-start}.dashboard-brand{margin-right:0;padding-right:0;border-right:0;border-top:1px solid #ffffff22;padding-top:10px;width:100%}
+      .hero-intro{grid-template-columns:1fr;gap:16px}.hero-visual{grid-column:1;grid-row:1}.hero-copy{grid-column:1;grid-row:2}.hero-visual svg{width:min(72%,310px)}
+      .method-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:560px){
+      .topbar{padding:12px 16px;gap:9px}.uni-mark{width:42px;height:42px;flex-basis:42px}.uni-copy b{font-size:.88rem}.uni-copy small{font-size:.67rem}.dashboard-copy b{font-size:.82rem}.dashboard-copy small{font-size:.67rem}
+      .content{padding-top:14px}.hero-intro{padding:20px 17px 18px;border-radius:22px;gap:8px}.hero-visual svg{width:min(68%,230px)}
+      .eyebrow{font-size:.72rem;margin-bottom:11px}.eyebrow:before{width:30px;flex-basis:30px}.hero h1{font-size:1.72rem;line-height:1.55}.hero h1 i{font-size:.56em;line-height:1.65}
+      .people-row{display:grid;grid-template-columns:1fr;margin:18px 0 13px;padding:4px 0}.person{border-left:0;border-bottom:1px solid #eadfcd;padding:10px 4px;min-width:0}.person:last-child{border-bottom:0}
+      .hero-summary{font-size:.84rem!important;line-height:1.95!important}.hero .metrics{margin-top:16px}
+      .method-grid{grid-template-columns:1fr;gap:10px}.method{min-height:0;grid-template-columns:88px 1fr auto;grid-template-rows:auto auto;align-items:center;column-gap:12px;padding:16px 17px}.method span{grid-row:1/3;grid-column:1;font-size:1.05rem}.method b{grid-column:2;font-size:.88rem}.method small{grid-column:2;font-size:.72rem}.method em{grid-column:3;grid-row:1/3;font-size:0;margin:0}.method em:after{content:"←";font-size:1.1rem;width:34px;height:34px;border-radius:50%;background:var(--gold);color:#fff;display:grid;place-items:center}.method:before{width:5px;height:100%;right:0;top:0}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="uni-brand" aria-label="دانشگاه علامه طباطبائی، دانشکده مدیریت و حسابداری">
+      <svg class="uni-mark" viewBox="0 0 64 64" aria-hidden="true">
+        <g fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M32 5 41 10 50 8 55 17 59 25 54 33 56 43 47 48 42 57 32 55 22 58 17 49 8 45 10 35 5 27 10 18 9 9 19 10 26 5Z"/>
+          <circle cx="32" cy="31" r="14"/><path d="M32 17v28M18 31h28M22 21l20 20M42 21 22 41"/>
+        </g>
+      </svg>
+      <span class="uni-copy"><b>دانشگاه علامه طباطبائی</b><small>دانشکده مدیریت و حسابداری</small></span>
+    </div>
+    <div class="dashboard-brand">
+      <span class="dashboard-copy"><b>داشبورد تعاملی نتایج پایان‌نامه کارشناسی ارشد</b><small>مدیریت جهانگردی ـ گرایش برنامه‌ریزی توسعه</small></span>
+    </div>
+  </header>
+
+  <main id="top" class="content">
+    <section class="hero">
+      <div class="hero-intro">
+        <div class="hero-copy">
+          <span class="eyebrow">نتایج پژوهش و تحلیل‌های فضایی</span>
+          <h1>شناسایی الگوهای فضایی حضور دیجیتال گردشگران در بافت تاریخی شهر تهران با استفاده از داده‌های کاربرمحور<i>مورد مطالعه: منطقه ۱۲ تهران</i></h1>
+
+          <div class="people-row" aria-label="اطلاعات پژوهش">
+            <div class="person">
+              <svg class="person-icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="9" r="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 27c.7-7 4.2-10 9-10s8.3 3 9 10Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span>ارائه‌دهنده</span><b>بهاره چنگیزی</b>
+            </div>
+            <div class="person">
+              <svg class="person-icon" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 6h9c2 0 3 1 3 3v17c0-2-1-3-3-3H5Zm22 0h-9c-2 0-3 1-3 3v17c0-2 1-3 3-3h9Z" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+              <span>استاد راهنما</span><b>دکتر سید علی حسینی</b>
+            </div>
+            <div class="person">
+              <svg class="person-icon" viewBox="0 0 32 32" aria-hidden="true"><circle cx="11" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="22" cy="10" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M3 26c.5-6 3.5-9 8-9 2.3 0 4.2.8 5.5 2.4C18 17.8 19.8 17 22 17c4.5 0 7.5 3 8 9" fill="none" stroke="currentColor" stroke-width="1.7"/></svg>
+              <span>استاد مشاور</span><b>دکتر فاطمه سالاروندیان</b>
+            </div>
+          </div>
+
+          <p class="hero-summary">این داشبورد، خلاصه‌ای تعاملی از داده‌ها، روش‌ها و نتایج تحلیل‌های فضایی پایان‌نامه است. شاخص‌ها و نقشه‌های پژوهش بر پایه داده‌های کاربرمحور اینستاگرام در دوره ۲۰۲۳ تا ۲۰۲۵ ارائه شده‌اند.</p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <!-- Lightweight inline SVG: abstract urban fabric + user-generated spatial signals; not a geographic map -->
+          <svg viewBox="0 0 420 360" role="img">
+            <defs>
+              <radialGradient id="heatA"><stop offset="0" stop-color="#c49a50" stop-opacity=".62"/><stop offset="1" stop-color="#c49a50" stop-opacity="0"/></radialGradient>
+              <radialGradient id="heatB"><stop offset="0" stop-color="#e2c98f" stop-opacity=".68"/><stop offset="1" stop-color="#e2c98f" stop-opacity="0"/></radialGradient>
+            </defs>
+            <g fill="none" stroke="#d9d1c4" stroke-width="1" opacity=".72">
+              <path d="M20 70C92 105 126 36 194 68s110 10 206-25M9 117c83 14 120-27 185 5s124 23 214-8M13 169c72-25 128 13 192 1s117-41 200-5M21 221c76 20 111-14 174 9s135-4 203-28M37 282c74-39 115-8 172-3s110 21 171-8"/>
+              <path d="M70 28c11 77-20 128 7 190s13 89 0 126M126 18c-9 73 23 109 8 165s-1 110 14 162M192 15c13 62-9 120 10 171s3 106-6 158M258 20c-18 70 19 112 5 166s7 105 20 145M326 26c-5 69 14 103-4 154s9 95 30 135"/>
+            </g>
+            <g fill="none" stroke="#c49a50" opacity=".62"><circle cx="210" cy="180" r="151" stroke-dasharray="6 8"/><path d="M62 89C145 26 289 27 365 105M55 271c84 69 222 79 311-1"/></g>
+            <circle cx="278" cy="119" r="68" fill="url(#heatA)"/><circle cx="229" cy="211" r="78" fill="url(#heatB)"/><circle cx="326" cy="244" r="54" fill="url(#heatA)"/>
+            <g fill="#102a43" opacity=".92">
+              <circle cx="111" cy="132" r="4"/><circle cx="134" cy="151" r="3"/><circle cx="154" cy="115" r="4"/><circle cx="166" cy="187" r="3"/><circle cx="187" cy="146" r="4"/><circle cx="199" cy="224" r="3"/><circle cx="221" cy="166" r="4"/><circle cx="245" cy="136" r="3"/><circle cx="260" cy="205" r="4"/><circle cx="286" cy="165" r="3"/><circle cx="301" cy="232" r="4"/><circle cx="328" cy="196" r="3"/><circle cx="348" cy="150" r="4"/><circle cx="145" cy="241" r="3"/><circle cx="179" cy="266" r="4"/><circle cx="248" cy="278" r="3"/><circle cx="303" cy="287" r="4"/>
+            </g>
+            <g stroke="#102a43" stroke-width="1.2" opacity=".45"><path d="M111 132 154 115 187 146 221 166 245 136 278 119 348 150M134 151 166 187 199 224 260 205 301 232 326 244M145 241 179 266 248 278 303 287"/></g>
+            <g transform="translate(47 50)"><rect width="54" height="54" rx="14" fill="#fbf9f4" stroke="#c49a50"/><circle cx="27" cy="27" r="12" fill="none" stroke="#c49a50" stroke-width="2"/><circle cx="27" cy="27" r="4" fill="#c49a50"/><circle cx="39" cy="15" r="2.5" fill="#c49a50"/></g>
+            <g transform="translate(322 64)"><rect width="54" height="54" rx="14" fill="#fbf9f4" stroke="#c49a50"/><path d="M16 37 25 27l7 7 7-9 5 12Z" fill="none" stroke="#c49a50" stroke-width="2"/><circle cx="20" cy="18" r="3" fill="#c49a50"/></g>
+            <g transform="translate(61 251)"><rect width="54" height="54" rx="14" fill="#fbf9f4" stroke="#c49a50"/><path d="M27 12c-7 0-12 5-12 12 0 9 12 19 12 19s12-10 12-19c0-7-5-12-12-12Z" fill="none" stroke="#c49a50" stroke-width="2"/><circle cx="27" cy="24" r="4" fill="#c49a50"/></g>
+            <g transform="translate(324 260)"><rect width="54" height="54" rx="14" fill="#fbf9f4" stroke="#c49a50"/><path d="M27 41S13 33 13 22c0-9 11-12 14-4 3-8 14-5 14 4 0 11-14 19-14 19Z" fill="none" stroke="#c49a50" stroke-width="2"/></g>
+          </svg>
+        </div>
+      </div>
+
+      <div id="metrics" class="metrics"></div>
+      <div class="note">«حضور دیجیتال گردشگری» در این پژوهش به بازنمایی مکانی جاذبه‌ها در محتوای عمومی اینستاگرام اشاره دارد و معادل شمارش فیزیکی گردشگران نیست.</div>
+    </section>
+
+    <nav id="methods" class="method-grid" aria-label="روش‌های تحلیل"></nav>
+    <section id="analysis" class="analysis" aria-live="polite"></section>
+  </main>
+  <script src="assets/app.js" defer></script>
+</body>
+</html>
